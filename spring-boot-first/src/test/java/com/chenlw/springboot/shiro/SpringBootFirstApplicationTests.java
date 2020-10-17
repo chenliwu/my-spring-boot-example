@@ -1,4 +1,4 @@
-package com.chenlw.springbootfirst;
+package com.chenlw.springboot.shiro;
 
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;

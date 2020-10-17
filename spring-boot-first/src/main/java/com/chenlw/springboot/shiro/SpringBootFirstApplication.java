@@ -1,4 +1,4 @@
-package com.chenlw.springbootfirst;
+package com.chenlw.springboot.shiro;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

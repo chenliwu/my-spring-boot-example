@@ -1,4 +1,4 @@
-package com.chenlw.springbootfirst.controller;
+package com.chenlw.springboot.shiro.controller;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -33,6 +33,7 @@ public class HelloControllerTest {
 
     @Before
     public void setUp() throws Exception {
+        System.setProperty("javax.net.debug", "all");
         this.base = new URL("http://localhost:" + port + "/hello");
     }
 
