@@ -32,7 +32,8 @@ public class SysUserServiceImpl implements ISysUserService {
      */
     @Override
     public List<SysUser> selectUserList(SysUser user) {
-        return userMapper.selectUserList(user);
+//        return userMapper.selectUserList(user);
+        return null;
     }
 
     /**
@@ -43,7 +44,8 @@ public class SysUserServiceImpl implements ISysUserService {
      */
     @Override
     public SysUser selectUserByUserName(String userName) {
-        return userMapper.selectUserByUserName(userName);
+//        return userMapper.selectUserByUserName(userName);
+        return null;
     }
 
     /**
@@ -54,7 +56,8 @@ public class SysUserServiceImpl implements ISysUserService {
      */
     @Override
     public SysUser selectUserById(Long userId) {
-        return userMapper.selectUserById(userId);
+//        return userMapper.selectUserById(userId);
+        return null;
     }
 
     /**
@@ -173,13 +176,14 @@ public class SysUserServiceImpl implements ISysUserService {
     @Override
     @Transactional
     public int insertUser(SysUser user) {
-        // 新增用户信息
-        int rows = userMapper.insertUser(user);
-        // 新增用户岗位关联
-        insertUserPost(user);
-        // 新增用户与角色管理
-        insertUserRole(user);
-        return rows;
+//        // 新增用户信息
+//        int rows = userMapper.insertUser(user);
+//        // 新增用户岗位关联
+//        insertUserPost(user);
+//        // 新增用户与角色管理
+//        insertUserRole(user);
+//        return rows;
+        return 0;
     }
 
     /**
@@ -212,7 +216,8 @@ public class SysUserServiceImpl implements ISysUserService {
      */
     @Override
     public int updateUserStatus(SysUser user) {
-        return userMapper.updateUser(user);
+//        return userMapper.updateUser(user);
+        return 0;
     }
 
     /**
@@ -223,7 +228,8 @@ public class SysUserServiceImpl implements ISysUserService {
      */
     @Override
     public int updateUserProfile(SysUser user) {
-        return userMapper.updateUser(user);
+//        return userMapper.updateUser(user);
+        return 0;
     }
 
     /**
@@ -234,7 +240,8 @@ public class SysUserServiceImpl implements ISysUserService {
      * @return 结果
      */
     public boolean updateUserAvatar(String userName, String avatar) {
-        return userMapper.updateUserAvatar(userName, avatar) > 0;
+//        return userMapper.updateUserAvatar(userName, avatar) > 0;
+        return false;
     }
 
     /**
@@ -245,7 +252,8 @@ public class SysUserServiceImpl implements ISysUserService {
      */
     @Override
     public int resetPwd(SysUser user) {
-        return userMapper.updateUser(user);
+//        return userMapper.updateUser(user);
+        return 0;
     }
 
     /**
@@ -257,7 +265,8 @@ public class SysUserServiceImpl implements ISysUserService {
      */
     @Override
     public int resetUserPwd(String userName, String password) {
-        return userMapper.resetUserPwd(userName, password);
+//        return userMapper.resetUserPwd(userName, password);
+        return 0;
     }
 
     /**

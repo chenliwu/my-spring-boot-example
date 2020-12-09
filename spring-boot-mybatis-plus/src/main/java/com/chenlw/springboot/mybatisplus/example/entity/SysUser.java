@@ -21,7 +21,7 @@ public class SysUser implements Serializable {
      * 用户ID
      */
     @TableId(type = IdType.ASSIGN_UUID)
-    private Long userId;
+    private String userId;
 
     /**
      * 部门ID
@@ -112,11 +112,11 @@ public class SysUser implements Serializable {
         return serialVersionUID;
     }
 
-    public Long getUserId() {
+    public String getUserId() {
         return userId;
     }
 
-    public void setUserId(Long userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 
