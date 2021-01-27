@@ -1,4 +1,4 @@
-package com.chenlw.springboot.mybatisplus.example.controller;
+package com.chenlw.springboot.security.example.controller;
 
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.stereotype.Controller;

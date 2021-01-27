@@ -1,7 +1,7 @@
-package com.chenlw.springboot.mybatisplus.example.service;
+package com.chenlw.springboot.security.example.service;
 
 
-import com.chenlw.springboot.mybatisplus.example.entity.SysUser;
+import com.chenlw.springboot.security.example.entity.SysUser;
 
 import java.util.List;
 

@@ -1,8 +1,8 @@
-package com.chenlw.springboot.mybatisplus.example.service.impl;
+package com.chenlw.springboot.security.example.service.impl;
 
-import com.chenlw.springboot.mybatisplus.example.dao.SysUserMapper;
-import com.chenlw.springboot.mybatisplus.example.entity.SysUser;
-import com.chenlw.springboot.mybatisplus.example.service.ISysUserService;
+import com.chenlw.springboot.security.example.dao.SysUserMapper;
+import com.chenlw.springboot.security.example.entity.SysUser;
+import com.chenlw.springboot.security.example.service.ISysUserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

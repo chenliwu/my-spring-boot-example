@@ -1,4 +1,4 @@
-package com.chenlw.springboot.mybatisplus.example.entity;
+package com.chenlw.springboot.security.example.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;

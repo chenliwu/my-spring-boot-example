@@ -1,4 +1,4 @@
-package com.chenlw.springboot.mybatisplus.example.controller;
+package com.chenlw.springboot.security.example.controller;
 
 import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.UnknownAccountException;

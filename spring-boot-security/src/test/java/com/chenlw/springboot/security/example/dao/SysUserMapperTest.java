@@ -1,8 +1,8 @@
-package com.chenlw.springboot.mybatisplus.example.dao;
+package com.chenlw.springboot.security.example.dao;
 
 
-import com.chenlw.springboot.mybatisplus.example.SpringBootMyBatisPlusApplication;
-import com.chenlw.springboot.mybatisplus.example.entity.SysUser;
+import com.chenlw.springboot.security.example.SpringBootSecurityApplication;
+import com.chenlw.springboot.security.example.entity.SysUser;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,7 +13,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = SpringBootMyBatisPlusApplication.class)
+@SpringBootTest(classes = SpringBootSecurityApplication.class)
 public class SysUserMapperTest {
 
     @Resource

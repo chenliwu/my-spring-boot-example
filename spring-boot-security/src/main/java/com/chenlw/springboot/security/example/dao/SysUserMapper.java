@@ -1,7 +1,7 @@
-package com.chenlw.springboot.mybatisplus.example.dao;
+package com.chenlw.springboot.security.example.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.chenlw.springboot.mybatisplus.example.entity.SysUser;
+import com.chenlw.springboot.security.example.entity.SysUser;
 import org.springframework.stereotype.Repository;
 
 /**
