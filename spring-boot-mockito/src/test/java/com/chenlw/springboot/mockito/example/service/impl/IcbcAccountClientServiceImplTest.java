@@ -55,5 +55,4 @@ public class IcbcAccountClientServiceImplTest {
         Assert.assertNotNull(result);
     }
 
-
 }
