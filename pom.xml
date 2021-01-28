@@ -48,6 +48,64 @@
 		</dependency>
 	</dependencies>
 
+	<profiles>
+		<profile>
+			<!-- 内部maven环境 -->
+			<id>repository-inner</id>
+			<activation>
+				<!-- 默认激活该profile节点-->
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<repositories>
+				<repository>
+					<id>aliyun</id>
+					<url>https://maven.aliyun.com/repository/public</url>
+				</repository>
+				<repository>
+					<id>spring</id>
+					<url>https://maven.aliyun.com/nexus/content/repositories/spring</url>
+				</repository>
+				<repository>
+					<id>bytter-inner</id>
+					<url>http://192.168.0.36:8081/repository/maven-public/</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+						<updatePolicy>daily</updatePolicy>
+					</snapshots>
+				</repository>
+			</repositories>
+		</profile>
+		<profile>
+			<!-- 外部maven环境 -->
+			<id>repository-outer</id>
+			<repositories>
+				<repository>
+					<id>aliyun</id>
+					<url>https://maven.aliyun.com/repository/public</url>
+				</repository>
+				<repository>
+					<id>spring</id>
+					<url>https://maven.aliyun.com/nexus/content/repositories/spring</url>
+				</repository>
+
+			</repositories>
+		</profile>
+	</profiles>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>aliyun</id>
+			<url>https://maven.aliyun.com/repository/public</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>spring</id>
+			<url>https://maven.aliyun.com/nexus/content/repositories/spring</url>
+		</pluginRepository>
+	</pluginRepositories>
+
 	<build>
 		<plugins>
 			<plugin>
