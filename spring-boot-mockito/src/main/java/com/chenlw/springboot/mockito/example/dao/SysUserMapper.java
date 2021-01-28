@@ -9,7 +9,6 @@ import org.springframework.stereotype.Repository;
  *
  * @author chenlw
  */
-
 @Repository
 public interface SysUserMapper extends BaseMapper<SysUser> {
 
