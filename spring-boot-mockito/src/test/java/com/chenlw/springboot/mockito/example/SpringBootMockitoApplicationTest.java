@@ -11,15 +11,15 @@ import javax.sql.DataSource;
 @SpringBootApplication
 @EnableTransactionManagement
 @MapperScan("com.chenlw.springboot.mockito.*.dao")
-public class SpringBootMyBatisPlusApplicationTest {
+public class SpringBootMockitoApplicationTest {
 
-    @Bean
-    public DataSource dataSource() {
-        DruidDataSource dataSource = new DruidDataSource();
-        dataSource.setUrl("jdbc:mysql://192.168.1.170:3306/my_spring_boot_standard?characterEncoding=UTF-8&useUnicode=true&useSSL=false");
-        dataSource.setUsername("root");// 用户名
-        dataSource.setPassword("123456");// 密码
-        return dataSource;
-    }
+//    @Bean
+//    public DataSource dataSource() {
+//        DruidDataSource dataSource = new DruidDataSource();
+//        dataSource.setUrl("jdbc:mysql://192.168.1.170:3306/my_spring_boot_standard?characterEncoding=UTF-8&useUnicode=true&useSSL=false");
+//        dataSource.setUsername("root");// 用户名
+//        dataSource.setPassword("12345678");// 密码
+//        return dataSource;
+//    }
 
 }
