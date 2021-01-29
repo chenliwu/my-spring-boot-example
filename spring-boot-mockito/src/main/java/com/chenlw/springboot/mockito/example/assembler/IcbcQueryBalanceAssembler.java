@@ -18,7 +18,6 @@ public class IcbcQueryBalanceAssembler {
      * @return 查询余额报文
      */
     public Object getQueryBalanceOutput(Object accountInfo) {
-        Object output = new Object();
         System.out.println("=======组装账户余额查询报文 start=====");
         System.out.println("执行组装账户余额查询报文操作1");
         System.out.println("执行组装账户余额查询报文操作2");
@@ -26,7 +25,7 @@ public class IcbcQueryBalanceAssembler {
         System.out.println("·····");
         System.out.println("=======组装账户余额查询报文 end=====");
         System.out.println();
-        return output;
+        return "账户余额查询报文";
     }
 
 }

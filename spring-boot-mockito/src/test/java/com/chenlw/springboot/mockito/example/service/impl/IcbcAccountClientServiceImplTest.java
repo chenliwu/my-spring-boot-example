@@ -10,13 +10,15 @@ import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.MockitoAnnotations;
 import org.mockito.Spy;
+import org.springframework.boot.test.mock.mockito.SpyBean;
 
 /**
  * 工行-客户端-业务Service测试
  */
 public class IcbcAccountClientServiceImplTest {
 
-    @Spy
+    // @Spy
+    @SpyBean
     private IcbcQueryBalanceAssembler icbcQueryBalanceAssembler;
 
     @Spy
